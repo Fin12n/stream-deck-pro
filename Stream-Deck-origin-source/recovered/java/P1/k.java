@@ -1,0 +1,50 @@
+package P1;
+
+import android.os.Build;
+import android.os.Trace;
+import android.util.Log;
+import java.lang.reflect.Method;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class k {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static long f8872a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public static Method f8873b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public static Method f8874c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public static Method f8875d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    public static Method f8876e;
+
+    static {
+        if (Build.VERSION.SDK_INT < 29) {
+            try {
+                f8872a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
+                Class cls = Long.TYPE;
+                f8873b = Trace.class.getMethod("isTagEnabled", cls);
+                Class cls2 = Integer.TYPE;
+                f8874c = Trace.class.getMethod("asyncTraceBegin", cls, String.class, cls2);
+                f8875d = Trace.class.getMethod("asyncTraceEnd", cls, String.class, cls2);
+                f8876e = Trace.class.getMethod("traceCounter", cls, String.class, cls2);
+            } catch (Exception e8) {
+                Log.i("TraceCompat", "Unable to initialize via reflection.", e8);
+            }
+        }
+    }
+
+    public static void a(String str) {
+        Trace.beginSection(str);
+    }
+
+    public static void b() {
+        Trace.endSection();
+    }
+}

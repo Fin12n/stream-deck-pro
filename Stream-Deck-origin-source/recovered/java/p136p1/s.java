@@ -1,0 +1,11 @@
+package p136p1;
+
+import android.graphics.text.LineBreakConfig;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class s {
+    public static /* synthetic */ LineBreakConfig.Builder a() {
+        return new LineBreakConfig.Builder();
+    }
+}

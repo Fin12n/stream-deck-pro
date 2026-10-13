@@ -1,0 +1,22 @@
+# Tool Versions and Environment Info
+# Generated during Stream Deck APK Reverse Engineering and Source Recovery
+
+Decompilation & Disassembly:
+- JADX: v1.5.6 (CLI dex to java decompiler with --export-gradle, --show-bad-code)
+- Apktool: v3.0.3 (Android resource table decoder and smali disassembler)
+- Baksmali: Integrated in Apktool v3.0.3
+
+Runtime Environment:
+- Java Runtime: OpenJDK 21.0.4 LTS (build 21.0.4+7-LTS, Eclipse Adoptium Temurin)
+- OS: Linux x86_64
+- Python: Python 3.12.3
+
+Binary Analysis Utilities:
+- GNU readelf: (GNU Binutils)
+- GNU nm: (GNU Binutils)
+- GNU objdump: (GNU Binutils)
+- unzip: v6.00
+
+Skills & Frameworks:
+- Reverse-Skill Framework: apk-reverse CLI workflow
+- AntiGravity IDE: v4.3.8

@@ -1,0 +1,3 @@
+rootProject.name = 'Stream Deck'
+
+include 'app'

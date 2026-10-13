@@ -1,0 +1,10 @@
+                 U ANativeWindow_fromSurface
+                 U ANativeWindow_getFormat
+                 U ANativeWindow_getHeight
+                 U ANativeWindow_getWidth
+                 U ANativeWindow_release
+                 U __cxa_atexit@LIBC
+                 U __cxa_finalize@LIBC
+0000000000000838 T Java_androidx_camera_core_impl_utils_SurfaceUtil_nativeGetSurfaceInfo@@VERS_1.0
+                 U __register_atfork@LIBC
+                 U __stack_chk_fail@LIBC

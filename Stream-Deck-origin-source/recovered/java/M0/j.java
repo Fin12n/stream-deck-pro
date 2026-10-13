@@ -1,0 +1,42 @@
+package M0;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes.dex */
+public enum j {
+    EmailAddress,
+    Username,
+    Password,
+    NewUsername,
+    NewPassword,
+    PostalAddress,
+    PostalCode,
+    CreditCardNumber,
+    CreditCardSecurityCode,
+    CreditCardExpirationDate,
+    CreditCardExpirationMonth,
+    CreditCardExpirationYear,
+    CreditCardExpirationDay,
+    AddressCountry,
+    AddressRegion,
+    AddressLocality,
+    AddressStreet,
+    AddressAuxiliaryDetails,
+    PostalCodeExtended,
+    PersonFullName,
+    PersonFirstName,
+    PersonLastName,
+    PersonMiddleName,
+    PersonMiddleInitial,
+    PersonNamePrefix,
+    PersonNameSuffix,
+    PhoneNumber,
+    PhoneNumberDevice,
+    PhoneCountryCode,
+    PhoneNumberNational,
+    Gender,
+    BirthDateFull,
+    BirthDateDay,
+    BirthDateMonth,
+    BirthDateYear,
+    SmsOtpCode
+}

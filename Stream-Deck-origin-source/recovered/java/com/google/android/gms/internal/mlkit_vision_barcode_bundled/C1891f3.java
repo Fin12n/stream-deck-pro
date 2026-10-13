@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.mlkit_vision_barcode_bundled;
+
+/* JADX INFO: renamed from: com.google.android.gms.internal.mlkit_vision_barcode_bundled.f3, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public final class C1891f3 implements InterfaceC1934o1 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final InterfaceC1934o1 f18126a = new C1891f3();
+
+    @Override // com.google.android.gms.internal.mlkit_vision_barcode_bundled.InterfaceC1934o1
+    public final boolean a(int i8) {
+        switch (i8) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+                return true;
+            default:
+                return false;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+package com.amazon.a.a.o.c.a;
+
+import com.amazon.device.simplesignin.a.LSJS.cFAYKUlMj;
+import java.io.InputStream;
+import java.io.InvalidClassException;
+import java.io.ObjectInputStream;
+import java.io.ObjectStreamClass;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.regex.Pattern;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes.dex */
+public class f extends ObjectInputStream {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    private final List<a> f16805a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    private final List<a> f16806b;
+
+    public f(InputStream inputStream) {
+        super(inputStream);
+        this.f16805a = new ArrayList();
+        this.f16806b = new ArrayList();
+    }
+
+    private void b(String str) throws InvalidClassException {
+        Iterator<a> it = this.f16806b.iterator();
+        while (it.hasNext()) {
+            if (it.next().a(str)) {
+                a(str);
+            }
+        }
+        Iterator<a> it2 = this.f16805a.iterator();
+        while (it2.hasNext()) {
+            if (it2.next().a(str)) {
+                return;
+            }
+        }
+        a(str);
+    }
+
+    public void a(String str) throws InvalidClassException {
+        throw new InvalidClassException(cFAYKUlMj.LgIoY + str);
+    }
+
+    @Override // java.io.ObjectInputStream
+    public Class<?> resolveClass(ObjectStreamClass objectStreamClass) throws InvalidClassException {
+        b(objectStreamClass.getName());
+        return super.resolveClass(objectStreamClass);
+    }
+
+    public f a(Class<?>... clsArr) {
+        for (Class<?> cls : clsArr) {
+            this.f16805a.add(new c(cls.getName()));
+        }
+        return this;
+    }
+
+    public f a(String... strArr) {
+        for (String str : strArr) {
+            this.f16805a.add(new g(str));
+        }
+        return this;
+    }
+
+    public f a(Pattern pattern) {
+        this.f16805a.add(new e(pattern));
+        return this;
+    }
+
+    public f a(a aVar) {
+        this.f16805a.add(aVar);
+        return this;
+    }
+
+    public f b(Class<?>... clsArr) {
+        for (Class<?> cls : clsArr) {
+            this.f16806b.add(new c(cls.getName()));
+        }
+        return this;
+    }
+
+    public f b(String... strArr) {
+        for (String str : strArr) {
+            this.f16806b.add(new g(str));
+        }
+        return this;
+    }
+
+    public f b(Pattern pattern) {
+        this.f16806b.add(new e(pattern));
+        return this;
+    }
+
+    public f b(a aVar) {
+        this.f16806b.add(aVar);
+        return this;
+    }
+}

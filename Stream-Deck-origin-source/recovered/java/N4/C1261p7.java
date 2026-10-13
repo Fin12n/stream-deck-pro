@@ -1,0 +1,19 @@
+package N4;
+
+/* JADX INFO: renamed from: N4.p7, reason: case insensitive filesystem */
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public final class C1261p7 {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public Y6 f7266a;
+
+    public final C1261p7 b(Y6 y8) {
+        this.f7266a = y8;
+        return this;
+    }
+
+    public final C1282r7 c() {
+        return new C1282r7(this, null);
+    }
+}

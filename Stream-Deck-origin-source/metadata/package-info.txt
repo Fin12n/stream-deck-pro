@@ -1,0 +1,75 @@
+======================================================================
+Stream Deck Mobile - Application Package Information
+======================================================================
+
+General Application Metadata:
+- Application Name: Stream Deck Mobile
+- Package Identifier: com.corsair.android.streamdeck
+- Original Vendor: Elgato Systems GmbH / Corsair Memory Inc.
+- Version Name: 2.1.2
+- Version Code: 117
+- Target SDK Version: 35 (Android 15)
+- Minimum SDK Version: 28 (Android 9.0 Pie)
+- Compile SDK Version: 35
+
+Package Architecture & Distribution Format:
+- Container Format: APKX (XAPK v2 - APKPure distribution format)
+- Packaging Scheme: Split APKs (Android App Bundle / Dynamic Delivery)
+- Total Package Size: 31,058,992 bytes (31.05 MB)
+- Included Split Modules:
+  * Base APK: com.corsair.android.streamdeck.apk (18,510,606 bytes)
+  * ABI Split: config.arm64_v8a.apk (7,857,196 bytes)
+  * Locale Split: config.en.apk (49,561 bytes)
+  * Density Split: config.mdpi.apk (4,500,384 bytes)
+  * Container Manifest: manifest.json (756 bytes)
+  * App Icon: icon.png (139,709 bytes)
+
+Bytecode & DEX Structure:
+- Number of DEX Files: 2
+  * classes.dex (6,871,600 bytes)
+  * classes2.dex (4,813,704 bytes)
+- Total DEX Bytecode Size: 11,685,304 bytes
+- Processed Classes in DEX: 6,247 classes
+- Decompiled Java Source Files: 8,857 files
+- Compiler / Minifier: Android R8 (Map ID: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce)
+
+Declared Permissions:
+1. android.permission.INTERNET (Network connectivity to desktop Stream Deck & APIs)
+2. android.permission.CAMERA (QR code scanner for instant PC pairing)
+3. android.permission.ACCESS_NETWORK_STATE (LAN/WiFi state detection)
+4. com.android.vending.BILLING (Google Play In-App Billing v7.0)
+5. com.android.vending.CHECK_LICENSE (Google Play License Verification)
+6. com.corsair.android.streamdeck.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION (Signature-level protection)
+
+Key Application Components:
+- Wrapper Application: com.pairip.application.Application (Google Play Protect / PairIP runtime shield)
+- Underlying Application: com.elgato.streamdeck.StreamDeckApplication
+- Main Launcher Activity: com.elgato.streamdeck.MainActivity
+  * Launch Mode: singleInstancePerTask
+  * Intent Filters:
+    - android.intent.action.MAIN / android.intent.category.LAUNCHER
+    - Deep Links: http/https://streamdeck.elgato.com/c/* and /connect/*
+- Billing Activities:
+  * com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity
+  * com.android.billingclient.api.ProxyBillingActivity
+  * com.android.billingclient.api.ProxyBillingActivityV2
+- Receivers:
+  * com.amazon.device.iap.ResponseReceiver
+  * androidx.profileinstaller.ProfileInstallReceiver
+  * com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+- Content Providers:
+  * com.google.mlkit.common.internal.MlKitInitProvider
+  * androidx.startup.InitializationProvider
+  * io.sentry.android.core.SentryInitProvider
+  * io.sentry.android.core.SentryPerformanceProvider
+
+Native Libraries (arm64-v8a):
+- libvsd2-android.so (92,344 bytes) - Virtual Stream Deck 2 core JNI bridge (CryptoBox + Image decompression)
+- libsodium.so (395,248 bytes) - Libsodium cryptography engine (curve25519, crypto_box, public-key authentication)
+- libsentry.so (1,280,080 bytes) - Sentry native crash reporter
+- libsentry-android.so (15,976 bytes) - Sentry Android JNI glue
+- libbarhopper_v3.so (5,261,728 bytes) - Google ML Kit Barcode / QR recognition engine
+- libpairipcore.so (625,808 bytes) - PairIP tamper detection & licensing core
+- libimage_processing_util_jni.so (32,544 bytes) - Android CameraX image processor
+- libdatastore_shared_counter.so (7,112 bytes) - Jetpack DataStore multi-process lock counter
+- libsurface_util_jni.so (4,896 bytes) - Android Surface rendering helper

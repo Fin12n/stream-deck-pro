@@ -1,0 +1,24 @@
+package M4;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public final class T {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static T f5551a;
+
+    public static synchronized T a() {
+        try {
+            if (f5551a == null) {
+                f5551a = new T();
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return f5551a;
+    }
+
+    public static void b() {
+        S.a();
+    }
+}

@@ -1,0 +1,21 @@
+package p024c5;
+
+import java.util.Collections;
+import p087j5.b;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public final /* synthetic */ class m implements b {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static final m f16247a = new m();
+
+    public static b a() {
+        return f16247a;
+    }
+
+    @Override // p087j5.b
+    public Object get() {
+        return Collections.EMPTY_SET;
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="discovery_known_host_subtitle">
+        <item quantity="one">%1$s virtual device</item>
+        <item quantity="other">%1$s virtual devices</item>
+    </plurals>
+    <plurals name="paywall_period_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="paywall_period_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="paywall_period_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="paywall_period_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="paywall_trial_period_days">
+        <item quantity="one">%d day for free</item>
+        <item quantity="other">%d days for free</item>
+    </plurals>
+    <plurals name="paywall_trial_period_months">
+        <item quantity="one">%d month for free</item>
+        <item quantity="other">%d months for free</item>
+    </plurals>
+    <plurals name="paywall_trial_period_weeks">
+        <item quantity="one">%d week for free</item>
+        <item quantity="other">%d weeks for free</item>
+    </plurals>
+    <plurals name="paywall_trial_period_years">
+        <item quantity="one">%d year for free</item>
+        <item quantity="other">%d years for free</item>
+    </plurals>
+</resources>

@@ -1,0 +1,47 @@
+package P1;
+
+import android.os.Build;
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.SparseArray;
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes.dex */
+public abstract class b {
+
+    /* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+    public static class a {
+        public static <T> T a(Bundle bundle, String str, Class<T> cls) {
+            return (T) bundle.getParcelable(str, cls);
+        }
+
+        public static <T> T[] b(Bundle bundle, String str, Class<T> cls) {
+            return (T[]) bundle.getParcelableArray(str, cls);
+        }
+
+        public static <T> ArrayList<T> c(Bundle bundle, String str, Class<? extends T> cls) {
+            return bundle.getParcelableArrayList(str, cls);
+        }
+
+        public static <T extends Serializable> T d(Bundle bundle, String str, Class<T> cls) {
+            return (T) bundle.getSerializable(str, cls);
+        }
+
+        public static <T> SparseArray<T> e(Bundle bundle, String str, Class<? extends T> cls) {
+            return bundle.getSparseParcelableArray(str, cls);
+        }
+    }
+
+    public static Object a(Bundle bundle, String str, Class cls) {
+        if (Build.VERSION.SDK_INT >= 34) {
+            return a.a(bundle, str, cls);
+        }
+        Parcelable parcelable = bundle.getParcelable(str);
+        if (cls.isInstance(parcelable)) {
+            return parcelable;
+        }
+        return null;
+    }
+}

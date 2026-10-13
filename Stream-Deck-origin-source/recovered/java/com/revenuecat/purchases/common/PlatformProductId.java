@@ -1,0 +1,25 @@
+package com.revenuecat.purchases.common;
+
+import C6.v;
+import D6.L;
+import java.util.Map;
+import kotlin.jvm.internal.t;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public class PlatformProductId {
+    private final String productId;
+
+    public PlatformProductId(String productId) {
+        t.g(productId, "productId");
+        this.productId = productId;
+    }
+
+    public Map<String, String> getAsMap() {
+        return L.e(v.a("product_id", getProductId()));
+    }
+
+    public String getProductId() {
+        return this.productId;
+    }
+}

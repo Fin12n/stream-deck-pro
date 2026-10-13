@@ -1,0 +1,52 @@
+package com.amazon.device.simplesignin.a.a.d.mW;
+
+/* JADX INFO: loaded from: classes.dex */
+public class yOZfxp {
+    public static String AubpqCdK;
+    public static String CMAFgT;
+    public static String DHrVADelm;
+    public static String EZca;
+    public static String EZgq;
+    public static String FzlJjnzmsoGfbsB;
+    public static String GKnaZvrj;
+    public static String HBiB;
+    public static String HLzsGNJAyL;
+    public static String HqOjTjUiOutLu;
+    public static String IoXTQOgMpkoxiME;
+    public static String IyrwkkEEGJtzt;
+    public static String KhhIy;
+    public static String LhfXMNCD;
+    public static String MEQjOmqdN;
+    public static String RlCVjanewzPJ;
+    public static String RyTgub;
+    public static String TeMNwLgRpqpX;
+    public static String VFVQAT;
+    public static String VLZauAiT;
+    public static String VZsmqYgQjMODY;
+    public static String VhciRzLkdRis;
+    public static String XrfwlsUE;
+    public static String XrtxGWFlOz;
+    public static String ZkNmOdJCq;
+    public static String bBA;
+    public static String bjsFxiNi;
+    public static String cPhAwYmDNli;
+    public static String caDDNxSP;
+    public static String dGfLlClpzovQV;
+    public static String hHVkZzmkt;
+    public static String heHllfJUtdVSKuG;
+    public static String iauEXPxSOWyxdY;
+    public static String ivHOuwqbXQ;
+    public static String mpPzmeItXQur;
+    public static String nZgQhEEhuQRPiNr;
+    public static String ngXaiyq;
+    public static String oZyelSfiAPACpy;
+    public static String paGQIjyNXLvYUAH;
+    public static String qNNgZM;
+    public static String rQrxXnUZi;
+    public static String sHuFChND;
+    public static String tgvgUhPUouikI;
+    public static String vsuhPsS;
+    public static String xnJFfFaAbjnbre;
+    public static String yzenlRjitW;
+    public static String zUHDWdwD;
+}

@@ -1,0 +1,40 @@
+package D4;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.util.ArrayList;
+
+/* JADX INFO: compiled from: r8-map-id-d2b8b817bee19149903c97665668e348829d773948801672ae9b3443593db2ce */
+/* JADX INFO: loaded from: classes2.dex */
+public final class d implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ Object createFromParcel(Parcel parcel) {
+        int iV = A4.b.v(parcel);
+        ArrayList arrayListJ = null;
+        String strF = null;
+        boolean zM = false;
+        String strF2 = null;
+        while (parcel.dataPosition() < iV) {
+            int iP = A4.b.p(parcel);
+            int iL = A4.b.l(iP);
+            if (iL == 1) {
+                arrayListJ = A4.b.j(parcel, iP, p195w4.d.CREATOR);
+            } else if (iL == 2) {
+                zM = A4.b.m(parcel, iP);
+            } else if (iL == 3) {
+                strF2 = A4.b.f(parcel, iP);
+            } else if (iL != 4) {
+                A4.b.u(parcel, iP);
+            } else {
+                strF = A4.b.f(parcel, iP);
+            }
+        }
+        A4.b.k(parcel, iV);
+        return new a(arrayListJ, zM, strF2, strF);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i8) {
+        return new a[i8];
+    }
+}
