@@ -1,0 +1,13 @@
+# Build & Temporary Work Directories
+build-work/
+.scratch/
+
+# Keystores & Private Keys (Security Guardrail)
+*.keystore
+*.jks
+*.key
+*.pem
+
+# Gradle caches & lock files
+.gradle/
+*.lock
